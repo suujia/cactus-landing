@@ -1,0 +1,14 @@
+@include media-breakpoint-up(md) {
+  .navbar-dropdown-col-4 {
+    min-width: 35rem;
+  }
+}
+.navbar {
+  z-index: 99999;
+  .dropdown-item {
+    font-weight: $font-weight-medium;
+  }
+}
+.dropdown-menu {
+  margin-top: 0;
+}

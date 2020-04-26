@@ -1,0 +1,97 @@
+.jhiri-jhiri-top-right:before{
+  content: '';
+  position: absolute;
+  height: 160px;
+  width: 90px;
+  right: 23%;
+  bottom: 65%;
+  background-image: url(/assets/img/illustrations/shapes-5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.jhiri-jhiri-top-left:after{
+  content: '';
+  position: absolute;
+  height: 67px;
+  width: 76px;
+  left: 22.5%;
+  bottom: 11%;
+  background-image: url(/assets/img/illustrations/shapes-6.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.jhiri-feature-top-right:after{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 160px;
+  right: -3%;
+  top: -25%;
+  background-image: url(/assets/img/illustrations/shapes-11.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.shapes-left-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-31%, -50%);
+}
+.shapes-right-bottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(35%, 51%);
+}
+
+.shapes-right-top{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(57%, -57%);
+}
+.shapes-left-bottom {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  transform: translate(-34%, 55%);
+}
+.jhiri-left-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-75%, -43%);
+}
+
+
+.jhiri-right-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(53%, 55%);
+
+}
+.jhiri-right-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(72%, -29%);
+
+}
+.component-side-shape:before {
+  content: '';
+  position: absolute;
+  left: -60px;
+  top: -50px;
+  height:182px;
+  width: 118px;
+  background-image: url(/assets/img/illustrations/component-shape.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+}

@@ -1,0 +1,59 @@
+/*-----------------------------------------------
+|   Social Outline Buttons
+-----------------------------------------------*/
+.btn-outline-facebook{ @include button-outline-variant($facebook) }
+.btn-outline-twitter { @include button-outline-variant($twitter) }
+.btn-outline-google-plus { @include button-outline-variant($google-plus) }
+.btn{
+  text-transform: capitalize;
+  border-radius:0.375rem ;
+  font-weight: bold;
+  font-size: 13.33px;
+}
+/*-----------------------------------------------
+|   Shape rounded buttons
+-----------------------------------------------*/
+.btn-rounded {
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  border-color: $white;
+  transition: all .5s ease;
+  .icon{
+    margin-left: .3rem;
+  }
+}
+
+
+$custom-colors: (
+        'primary': $primary,
+        'secondary': $secondary,
+        'success': $success,
+        'info': $info,
+        'warning': $warning,
+        'danger': $danger,
+        'default': $dark,
+);
+@each $color, $value in $custom-colors {
+  .btn-rounded.btn-#{$color}{
+    color: $value;
+    @include hover-focus {
+      background-color: $value;
+      border-color: $value;
+      color: $white;
+    }
+  }
+}
+/*-----------------------------------------------
+|   Shape extra button
+-----------------------------------------------*/
+.btn-extra {
+  color:$primary;
+  background-color:#E7ECF5;
+  border-color: #E7ECF5;
+}

@@ -1,0 +1,34 @@
+.heading-shapes{
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.heading-shapes-right{
+  left: 100%;
+  top: 39%;
+  transform: translate3d(-25%, -65%, 0);
+}
+.heading-shapes-left{
+  right: 100%;
+  top: 50%;
+  transform: translate3d(19%, -65%, 0);
+}
+
+.heading-big-shape-right{
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 90%;
+    height: 261%;
+    left: 22%;
+    top: -112%;
+    background-image: url(/assets/img/illustrations/about-vector.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+}

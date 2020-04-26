@@ -1,0 +1,58 @@
+
+@include media-breakpoint-up(md) {
+  .slick-carousel.slick-vertical-dots {
+    .slick-dots {
+      list-style: none;
+      display: block;
+      position: absolute;
+      right: -35px;
+      bottom: 50%;
+      transform:  translate(50%, 50% ) rotate(90deg) !important;
+      text-align: center;
+      width: auto;
+      height: 30px;
+      z-index: 1;
+    }
+  }
+}
+.slick-carousel {
+  .slick-dots{
+    bottom: -35px;
+    z-index: 1;
+    li{
+      margin: map_get($spacers, 1);
+      button {
+        height: 0.6rem;
+        width: 0.6rem;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        transition: $transition-base;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @mixin slick-theme-variant($theme-color){
+    .slick-dots li{
+        button{
+          background-color: $theme-color;
+        }
+        &.slick-active{
+          button{
+            background: transparent;
+            border-color: $theme-color;
+          }
+        }
+      }
+    }
+  &.slick-theme-info{ @include slick-theme-variant($info); }
+  &.slick-theme-success{ @include slick-theme-variant($success); }
+  &.slick-theme-warning{ @include slick-theme-variant($warning); }
+  &.slick-theme-danger{ @include slick-theme-variant($danger); }
+  &.slick-theme-black{ @include slick-theme-variant($black); }
+  &.slick-theme-white{ @include slick-theme-variant($white); }
+  &.slick-theme-primary{ @include slick-theme-variant($primary); }
+}
+
